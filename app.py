@@ -18,8 +18,8 @@ def recommend():
     response = []
     for i in range(len(route_coordinates)):
         route_data = {
-            'distance': distance[i],
-            'duration': duration[i],
+            'distance': float(distance[i]),
+            'duration': float(duration[i]),
             'routeCoordinates': coordinates_list[i],
             'routeName': name[i]
         }
